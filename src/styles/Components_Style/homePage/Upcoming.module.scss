@@ -1,0 +1,78 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.upcomingContainer {
+  width: 79%;
+  height: 656px;
+  margin: 0 auto;
+  margin-top: -179px;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+
+  .projectInfoContainer {
+    width: 50%;
+    height: 100%;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    p {
+      &:nth-child(1) {
+        color: $color-yellow;
+      }
+      &:nth-child(2) {
+        color: $color-white;
+      }
+      &:nth-child(3) {
+        color: $color-white;
+        line-height: 40px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .projectInfoButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+      width: 289px;
+      height: 64px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .projectImageContainer {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 0;
+    position: relative;
+    p {
+      width: 129px;
+      height: 127px;
+      background-color: $color-black;
+      color: $color-white;
+      z-index: 9999;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: $text-s;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

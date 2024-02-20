@@ -1,0 +1,108 @@
+@import "../Global_Styles/variables.module..scss";
+
+.navbar {
+  background-color: black;
+  color: $color-white;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 200px;
+
+  h3 {
+    font-size: $text-s;
+  }
+
+  .newsLetterSearchContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    margin-left: 100px;
+    width: 233px;
+    height: 38px;
+    border-radius: 30px;
+    border: solid 2px white;
+    background: none;
+    padding-left: 20px;
+    color: $color-white;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+.navbarOptions {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  a:nth-child(2) {
+    margin-left: 73px;
+  }
+}
+
+.header {
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  align-items: center;
+  box-shadow: $shadow;
+  img {
+    margin-left: 20px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    li {
+      color: $color-black;
+      font-size: $text-s;
+      font-weight: bold;
+      position: relative;
+      margin-left: 32px;
+      cursor: pointer;
+
+      &:hover {
+        .dropdownMenu {
+          display: block;
+        }
+      }
+    }
+    .donateLink {
+      h5 {
+        font-size: $text-xs;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: $text-s;
+        font-weight: bold;
+      }
+    }
+  }
+  .dropdownMenu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background-color: $color-black;
+
+    border-radius: 30px;
+    padding: 20px;
+    left: -70px;
+    border: solid 1px black;
+    width: 220px;
+
+    li {
+      color: $color-white;
+      width: 100%;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.numbersContainer {
+  display: flex;
+  padding: 43px 257px;
+  margin-top: 112px;
+  justify-content: space-between;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  div {
+    width: 476px;
+    height: 140px;
+    text-align: center;
+  }
+}

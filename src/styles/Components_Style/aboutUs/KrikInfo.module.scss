@@ -1,0 +1,36 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.krikInfoContainer {
+  width: 100%;
+
+  .containerHeading {
+    margin: 104px 0 112px 200px;
+  }
+
+  .krikInfoModule {
+    border-top: 2px solid black;
+    display: flex;
+    padding: 40px 0 40px 200px;
+
+    .krikInfoModuleHeading {
+      width: 450px;
+      word-break: break-all;
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: $color-orange;
+    }
+
+    .krikInfoModuleText {
+      width: 674px;
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+    }
+
+    &:nth-child(4) {
+      border-bottom: 2px solid black;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.container {
+  margin-top: 140px;
+  padding-left: 200px;
+
+  h1 {
+    margin-bottom: 41px;
+    font-size: $text-xl;
+  }
+
+  button {
+    margin-left: 1158px;
+    margin-top: 56px;
+    width: 361px;
+    height: 64px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  .imageList {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    overflow-x: auto;
+    white-space: wrap;
+    margin-bottom: 30px;
+    gap: 15px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .sliderScrollbar {
+    height: 24px;
+    width: 1519px;
+
+    .scrollbarTrack {
+      height: 2px;
+      width: 100%;
+      background-color: grey;
+      position: relative;
+      border-radius: 4px;
+    }
+    .scrollbarThumb {
+      position: absolute;
+      border-radius: inherit;
+      cursor: grab;
+      left: 0;
+      top: -3px;
+      height: 8px;
+      width: 491px;
+
+      /* Increase clickable area without changing the visible size */
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        padding: 25px;
+        height: 100%;
+        top: -30px;
+        width: 100%;
+      }
+    }
+
+    .sliderWrapper {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+}
+
+.newsContainer {
+  position: relative;
+  display: inline-block;
+
+  .imageItem {
+    width: 491px;
+    height: 464px;
+    object-fit: cover;
+    scrollbar-width: none;
+    position: relative;
+    border-radius: 30px;
+    margin: 0 20px 0 0;
+  }
+}
+.imageItemText {
+  position: absolute;
+  bottom: 10px;
+  left: 32.5px;
+  // width: 426px;
+  // width: 100%;
+  // height: 162px;
+
+  padding: 10px 30px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $color-black;
+      border-radius: 25px;
+      background-color: $color-yellow;
+      font-size: $text-xs;
+      padding: 3px 12px;
+    }
+
+    img {
+      width: 16.8px;
+      height: 18.2px;
+      margin-right: 5px;
+      margin-left: 20px;
+    }
+
+    span {
+      font-size: $text-xs;
+      color: $color-white;
+    }
+  }
+
+  .newsDescription,
+  .showMore {
+    color: $color-white;
+    // width: 360px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
+
+.projectStatus {
+  font-size: $text-s;
+  border-radius: 40px;
+  border: 2px solid black;
+  width: 233px;
+  padding: 6px 0;
+  text-align: center;
+  margin: 56px 0 40px 0;
+}

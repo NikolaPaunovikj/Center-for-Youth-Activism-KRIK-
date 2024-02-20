@@ -1,0 +1,41 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.organizationContainer {
+  width: 95%;
+  // height: 680px;
+
+  padding-left: 200px;
+  margin-top: 144px;
+  padding: 56px 0 56px 200px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .organizationImageContainer {
+    width: 689px;
+    height: 100%;
+    margin-right: 53px;
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+
+  .organizationTextContainer {
+    // width: 853px;
+    height: 100%;
+
+    h1 {
+      // font-size: $text-m;
+      line-height: 48px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      // font-size: $body-l;
+      line-height: 40px;
+      // width: 853px;
+    }
+  }
+}

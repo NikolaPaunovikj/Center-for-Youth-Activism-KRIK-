@@ -1,0 +1,84 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.singleNewsContainer {
+  padding: 200px;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+  }
+
+  .firstRow,
+  .secondRow {
+    display: flex;
+    img {
+      height: 544px;
+    }
+
+    h1 {
+      font-size: $text-xl;
+      margin-top: 10px;
+    }
+
+    div {
+      width: 50%;
+    }
+    div:nth-child(2) {
+      padding-left: 30px;
+    }
+    .newsDescription {
+      font-size: $body-l;
+      line-height: 40px;
+      margin-top: 30px;
+    }
+
+    .newsDate {
+      width: 100%;
+      padding: 5px 0;
+      border: 2px solid black;
+      font-size: $button-text-l;
+      border-radius: 40px;
+      text-align: center;
+    }
+  }
+
+  .firstRow {
+    margin-bottom: 88px;
+  }
+  .secondRow {
+    margin-bottom: 150px;
+  }
+
+  .newsCarousel {
+    margin-top: 50px;
+    width: 100%;
+    height: 467px;
+    position: relative;
+    h1 {
+      font-size: $text-m;
+    }
+
+    .prevButton,
+    .nextButton {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: none;
+      background-color: $color-black;
+      padding: 23px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .prevButton {
+      left: 20px;
+    }
+
+    .nextButton {
+      right: 20px;
+    }
+  }
+}

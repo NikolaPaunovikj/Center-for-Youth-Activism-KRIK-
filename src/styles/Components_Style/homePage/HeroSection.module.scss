@@ -1,0 +1,36 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.heroSectionContainer {
+  background-image: url("../../../../public/HeroImage.png");
+  height: 1115px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 112px 0;
+
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h5 {
+    margin-top: 100px;
+  }
+  p {
+    width: 485px;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  .aboutUsbutton {
+    border: none;
+    width: 452px;
+    height: 64px;
+    border-radius: 30px;
+    font-family: $Heading-font;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}

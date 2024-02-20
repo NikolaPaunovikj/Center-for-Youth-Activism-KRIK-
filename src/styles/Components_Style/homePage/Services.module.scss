@@ -1,0 +1,64 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.servicesContainer {
+  margin-top: 144px;
+  margin: 0 auto;
+  padding: 144px 200px 136px 200px;
+
+  .servicesWrapper {
+    width: 1519px;
+    height: 608px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+
+  .image {
+    width: 748px;
+    height: 608px;
+    border-radius: 40px;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .servicesOverview {
+    width: 747px;
+    height: 608px;
+  }
+
+  .service {
+    border-bottom: 2px solid black;
+    height: 195.57px;
+    margin-bottom: 11px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    div {
+      display: flex;
+      font-size: $text-m;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h5 {
+      font-size: $text-m;
+    }
+
+    p {
+      width: 530px;
+      line-height: 40px;
+    }
+    .imageContainer1,
+    .imageContainer2,
+    .imageContainer3 {
+      padding: 18px;
+      border-radius: 50%;
+    }
+    .imageContainer1 {
+      background-color: $color-black;
+    }
+  }
+}

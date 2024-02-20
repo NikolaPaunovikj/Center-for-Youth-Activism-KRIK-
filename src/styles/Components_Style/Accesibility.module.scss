@@ -1,0 +1,114 @@
+@import "../Global_Styles/variables.module..scss";
+
+.accesibilityButton {
+  width: 176px;
+  height: 64px;
+  // background-color: $color-orange;
+  color: $color-white;
+  font-size: $button-text-l;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 213px;
+}
+.accesibilityButton:hover + .accesibilityContainer,
+.accesibilityContainer:hover {
+  right: 0;
+
+  // transition: 1s;
+}
+.accesibilityContainer {
+  width: 707px;
+  height: 685px;
+  background-color: $color-white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: -100%;
+  z-index: 999999;
+  // display: none;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 86px;
+    height: 48px;
+    background-color: $color-black;
+    border-radius: 25px;
+  }
+
+  .slider {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    background-color: $color-white;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  input:checked + .switch .slider {
+    transform: translateX(-41px);
+  }
+
+  input:checked + .switch {
+    background-color: $color-orange;
+  }
+
+  .widgetAccesibilityButton {
+    color: $color-white;
+    width: 707px;
+    height: 64px;
+    border: none;
+    font-size: $button-text-l;
+  }
+}
+
+.switchContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  h1 {
+    font-size: $text-m;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.optionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  h5 {
+    margin: 0;
+    font-size: $text-s;
+  }
+  div {
+    width: 296px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: $hoverAccesibility;
+    }
+  }
+  div:nth-child(3),
+  div:nth-child(4) {
+    margin: 51px 0;
+  }
+}

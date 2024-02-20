@@ -1,0 +1,11 @@
+@import "../Global_Styles/variables.module..scss";
+
+.readingMask {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(252, 248, 4, 0.473);
+  pointer-events: none;
+  z-index: 9999;
+  transform-origin: 0 0%;
+}

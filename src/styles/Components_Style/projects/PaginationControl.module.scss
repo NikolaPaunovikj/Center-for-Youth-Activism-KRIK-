@@ -1,0 +1,26 @@
+@import '../../Global_Styles/variables.module..scss';
+
+
+.paginationControlContainer {
+  width: 100%;
+  // padding: 50px 200px;
+ padding-top: 56px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 160px;
+  }
+  li {
+    margin-right: 15px;
+    font-size: $body-l;
+  }
+
+  .active {
+    font-size: $text-m;
+    font-weight: bold;
+  }
+
+
+}

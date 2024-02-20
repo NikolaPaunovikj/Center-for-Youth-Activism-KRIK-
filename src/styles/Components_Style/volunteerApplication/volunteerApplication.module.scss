@@ -1,0 +1,110 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.volunteerApplicationHeading {
+  text-align: center;
+  margin-top: 144px;
+  margin-bottom: 112px;
+}
+
+.volunteerApplicationContainer {
+  width: 66%;
+  margin: 0 auto;
+  height: 840px;
+  background-color: white;
+  padding: 88px 129px;
+
+  .volunteerApplicationWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left,
+  .right {
+    width: 45%;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input {
+      width: 100%;
+      height: 64px;
+      border-radius: 30px;
+      padding: 30px;
+      font-size: $text-s;
+      border: 2px solid black;
+    }
+  }
+
+  .right {
+    width: 45%;
+    height: 496px;
+
+    button {
+      width: 48%;
+      height: 64px;
+      border: none;
+      border-radius: 30px;
+      border: 2px solid black;
+      font-size: $text-xs;
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .rangeContainer {
+      label {
+        margin-bottom: 20px;
+      }
+    }
+
+    .volunteerInterests {
+      display: flex;
+      flex-wrap: wrap;
+      height: 183px;
+
+      > div:first-of-type {
+        margin-bottom: 16px;
+      }
+
+      label {
+        margin-bottom: 16px;
+      }
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  label {
+    display: block;
+    font-size: $text-s;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .submitButtonContainer {
+    margin-top: 64px;
+    text-align: center;
+    margin-left: 0 auto;
+    button {
+      width: 200px;
+      height: 64px;
+      color: $color-white;
+      font-size: $button-text-l;
+      border: none;
+      border-radius: 30px;
+    }
+  }
+}
+
+.active {
+  background-color: $color-orange;
+}
+
+.disabled {
+  background-color: white;
+}

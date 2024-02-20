@@ -1,0 +1,68 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.wrapper {
+  // width: 1520px;
+  width: 100%;
+  // margin-left: 200px;
+  // margin-top: 96px;
+  // margin-bottom: 199px;
+  padding: 96px 200px 199px 200px;
+
+  .accordion {
+    h1 {
+      margin-bottom: 29px;
+    }
+  }
+
+  .item {
+    background-color: $color-white;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 29px;
+    cursor: pointer;
+    &.show {
+      background-color: $color-violet;
+    }
+  }
+
+  .title {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .iconPlus,
+    .iconMinus {
+      font-size: 40px;
+      padding: 5px 7.5px;
+      border-radius: 50%;
+      border: 4px solid black;
+    }
+
+    .iconMinus {
+      background-color: $color-black;
+      color: $color-violet;
+    }
+    h1 {
+      font-size: $text-m;
+    }
+  }
+
+  .content {
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: $body-l;
+    line-height: 40px;
+
+    &.show {
+      max-height: 9999px;
+      word-wrap: break-word;
+    }
+  }
+}

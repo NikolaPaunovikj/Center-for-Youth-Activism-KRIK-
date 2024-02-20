@@ -1,0 +1,211 @@
+@import "../Global_Styles/variables.module..scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+label {
+  font-family: "Mulish", sans-serif;
+}
+
+p,
+small,
+span,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+//Background
+.defaultContrastOptions {
+  background-color: $color-white;
+}
+.increasedContrastOptions {
+  background-color: $color-orange !important;
+}
+
+.bgRed {
+  background-color: $contrast-red !important;
+}
+
+.defaultOrangeContrast {
+  background-color: $color-orange;
+}
+.increasedOrangeContrast {
+  background-color: $contrast-red;
+  color: $color-white;
+}
+
+.defaultVioletContrast {
+  background-color: $color-violet;
+}
+.increasedVioletContrast {
+  background-color: $contrast-violet;
+  color: $color-white;
+}
+
+.defaultYellowContrast {
+  background-color: $color-yellow;
+}
+.increasedYellowContrast {
+  background-color: $contrast-yellow;
+}
+
+//Text Colors
+.defaultOrangeColor {
+  color: $color-orange;
+}
+.increasedOrangeColor {
+  color: $contrast-red !important;
+}
+.defaultVioletColor {
+  color: $color-violet;
+}
+.increasedVioletColor {
+  color: $contrast-violet;
+}
+
+.defaultYellowColor {
+  color: $color-yellow;
+}
+.increasedYellowColor {
+  color: $contrast-yellow;
+}
+
+//
+// Text Sizes
+.defaultXlSize {
+  font-size: $text-xl;
+}
+
+.increasedXlSize {
+  font-size: 70px;
+}
+
+.defaultLSize {
+  font-size: $text-l;
+}
+
+.increasedLSize {
+  font-size: 60px;
+}
+
+.defaultTextMSize {
+  font-size: $text-m;
+}
+.increasetTextMSize {
+  font-size: 40px;
+}
+.increasedTextMSizeUpcoming {
+  font-size: 48px;
+}
+
+.defaultTextS {
+  font-size: $text-s;
+}
+.increasedTextS {
+  font-size: 36px;
+}
+
+.defaultTextXs {
+  font-size: $text-xs;
+}
+.increasedTextXs {
+  font-size: 22px;
+}
+
+.defaultBodyLSize {
+  font-size: $body-l;
+}
+.increasedBodyLSize {
+  font-size: 24px;
+}
+
+.defaultButtonLSize {
+  font-size: $button-text-l;
+}
+.increasedButtonLSize {
+  font-size: 32px;
+}
+
+.defaultNumbersSize {
+  font-size: $numbers;
+}
+.increasedNumbersSize {
+  font-size: 100px;
+}
+
+.defaultNumbersText {
+  font-size: $body-l;
+}
+
+.increasedNumbersText {
+  font-size: 32px;
+}
+
+//Bold Styles
+.defaultBoldStyle {
+  font-weight: 500;
+}
+.increasedBoldStyle {
+  font-weight: bold;
+}
+
+//Saturation Option
+body {
+  filter: saturate(100%);
+  background-color: rgb(228, 226, 226);
+}
+
+body.increasedSaturation {
+  filter: saturate(150%);
+}
+
+body.large-cursor {
+  cursor: url(/icons8-cursor-60.png), auto;
+}
+
+//Individual Elements
+.defaultDonateClass {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.increasedDonateClass {
+  background-color: $color-violet;
+  color: $color-black;
+}
+
+//Animation
+.defaultAnimation {
+  transition: 1s;
+  right: 0;
+  top: 213px;
+}
+
+.disabledAnimation {
+  transition: 0;
+  top: 213px;
+}

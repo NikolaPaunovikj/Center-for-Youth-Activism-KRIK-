@@ -1,0 +1,218 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.donateHeading {
+  margin-top: 144px;
+  text-align: center;
+  font-size: $text-l;
+}
+
+.navigationBar {
+  width: 65%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 104px;
+  display: flex;
+  margin-bottom: 146px;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+
+  div {
+    width: 50%;
+    text-align: center;
+    font-size: $text-s;
+    position: relative;
+    cursor: pointer;
+
+    .bar {
+      height: 10px;
+      width: 100%;
+      // background-color: $color-orange;
+      padding: 0;
+      position: absolute;
+      bottom: -5px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.donatePageContainer {
+  input {
+    width: 362px;
+    height: 56px;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 0 20px;
+    font-size: $body-l;
+    margin-bottom: 24px;
+    background: none;
+  }
+
+  label {
+    display: block;
+    font-size: $text-s;
+    margin-bottom: 8px;
+    margin-top: 56px;
+    font-weight: bold;
+  }
+
+  .inputAmmount {
+    font-weight: 100;
+    font-size: $text-xs;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.donatePricesContainer {
+  width: 65%;
+  margin: 0 auto;
+  background-color: $color-white;
+  padding: 102px 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h5 {
+    // font-size: $text-s;
+    margin-bottom: 24px;
+  }
+  button {
+    width: 234px;
+    height: 56px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 200px;
+    font-size: $text-xs;
+    cursor: pointer;
+
+    span {
+      padding: 8px;
+      margin-left: 40px;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  label {
+    display: block;
+    margin-top: 56px;
+  }
+  p {
+    // font-size: $body-l;
+    width: 70%;
+    line-height: 40px;
+    margin-top: 56px;
+  }
+  input {
+    width: 362px;
+    height: 56px;
+  }
+
+  .paymentOptions {
+    margin-top: 56px;
+    button {
+      height: 64px;
+      border: none;
+      font-size: $button-text-l;
+    }
+    button:nth-child(1) {
+      margin-right: 20px;
+      background-color: $color-black;
+      color: $color-white;
+    }
+    button:nth-child(2) {
+      background-color: $color-yellow;
+    }
+  }
+}
+
+.changeValute {
+  position: relative;
+  .dropdownMenu {
+    border-radius: 40px;
+    list-style: none;
+    width: 234px;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    top: 55px;
+    border: solid 2px black;
+    li {
+      color: $color-black;
+      padding: 5px;
+      font-size: 24px;
+      border: 1px solid;
+      border-radius: 30px;
+      margin: 3px;
+    }
+  }
+  .active {
+    display: block;
+  }
+}
+
+.donateDetailsContainer {
+  width: 52%;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 144px;
+  display: flex;
+  flex-direction: column;
+
+  .firstRow,
+  .secondRow,
+  .thirdRow,
+  .fourthRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    div:nth-child(1) {
+      margin-right: 20px;
+    }
+    label:nth-child(1) {
+      margin-top: 0;
+    }
+    div {
+      width: 50%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .secondRow {
+    div {
+      width: 100%;
+    }
+    .cardMonthCvv {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 48%;
+        margin-top: 36px;
+      }
+    }
+  }
+
+  .donateButtonContainer {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    button {
+      font-size: $button-text-l;
+      color: $color-white;
+      border: none;
+      width: 100%;
+      height: 56px;
+      border-radius: 30px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.active {
+  background-color: $color-yellow !important;
+}

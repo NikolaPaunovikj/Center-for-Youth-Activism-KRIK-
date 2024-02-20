@@ -1,0 +1,182 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.singleProjectContainer {
+  width: 100%;
+  padding: 144px 200px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projectCarousel {
+    height: 496px;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-bottom: 88px;
+
+    button {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: none;
+      background-color: $color-black;
+      padding: 23px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .prevButton {
+    left: 20px;
+  }
+
+  .nextButton {
+    right: 20px;
+  }
+
+  h1 {
+    // font-size: $text-xl;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  p {
+    // font-size: $body-l;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 15%;
+  }
+}
+
+.projectFirstInfo {
+  margin-top: 144px;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  overflow: hidden;
+
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 40px;
+
+  div:nth-child(1) {
+    width: 32%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: $color-black;
+    padding: 50px;
+    h1 {
+      text-align: left;
+      color: $color-white;
+    }
+  }
+  div:nth-child(2) {
+    width: 68%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 60px 140px;
+
+    p {
+      padding: 0;
+      text-align: left;
+    }
+  }
+}
+
+.projectSecondInfo {
+  margin-top: 144px;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+
+  div:nth-child(1) {
+    width: 67%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 60px 140px;
+    border: 2px solid black;
+    h1 {
+      text-align: left;
+      color: $color-black;
+    }
+    p {
+      padding: 0;
+      text-align: left;
+      color: $color-black;
+    }
+  }
+  div:nth-child(2) {
+    width: 32%;
+    height: 100%;
+    border-radius: 40px;
+  }
+}
+
+.progressBar {
+  margin-top: 144px;
+  width: 100%;
+  height: 72px;
+  border: 2px solid;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 32px;
+  }
+
+  .progressIndicator {
+    height: 100%;
+    // width: 50%;
+    border-radius: 40px;
+  }
+}
+
+.applicationContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+
+  .apply {
+    button {
+      background-color: $color-black;
+    }
+  }
+  .apply,
+  .donate {
+    display: flex;
+    // font-size: $text-s;
+    align-items: center;
+    p {
+      // font-size: $text-s;
+      font-weight: bold;
+      padding: 0;
+    }
+
+    button {
+      width: 232px;
+      height: 64px;
+      color: $color-white;
+      border-radius: 30px;
+      font-size: $text-s;
+      border: none;
+      margin-left: 100px;
+    }
+  }
+
+  .donate {
+    margin-top: 20px;
+  }
+}

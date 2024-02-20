@@ -1,0 +1,104 @@
+@import "../../Global_Styles/variables.module..scss";
+
+.projectCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+
+  .projectCardTitle {
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-yellow;
+    color: $color-white;
+    text-align: center;
+
+    h2 {
+      font-size: $text-l;
+    }
+  }
+
+  .projectCardImage {
+    width: 100%;
+    height: 82%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.customCard4 {
+  display: flex;
+  flex-direction: column-reverse;
+  .projectCardTitle {
+    h2 {
+      text-align: center;
+      font-size: $text-s;
+    }
+  }
+}
+
+.customCard3 {
+  .projectCardTitle {
+    background-color: $color-black;
+    h2 {
+      text-align: center;
+      font-size: $text-s;
+    }
+  }
+}
+
+.customCard2 {
+  .projectCardTitle {
+    background-color: $color-violet;
+    h2 {
+      text-align: center;
+      font-size: $text-s;
+    }
+  }
+}
+
+.finishedCustomCard1 {
+  .projectCardTitle {
+    background-color: $color-violet;
+  }
+}
+
+.finishedCustomCard2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.finishedCustomCard3 {
+  .projectCardTitle {
+    background-color: $color-black;
+  }
+}
+
+.finishedCustomCard,
+.finishedCustomCard6 {
+  display: flex;
+  flex-direction: column-reverse;
+  .projectCardTitle {
+    background-color: $color-black;
+  }
+}
+
+.finishedCustomCard5 {
+  flex-direction: column-reverse;
+  display: flex;
+  .projectCardTitle {
+    background-color: $color-violet;
+  }
+}
+
+.finishedCustomCard7 {
+  .projectCardTitle {
+    background-color: $color-yellow;
+  }
+}
