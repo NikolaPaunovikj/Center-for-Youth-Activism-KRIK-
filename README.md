@@ -29,7 +29,7 @@ Welcome to the Youth Activism Krik web platform! This project was developed with
 5. Access the web platform in your browser at `http://localhost:3000`
 
 
-### Project Status
+# Project Status
 This repository represents a work-in-progress and is not yet a completed project. While significant progress has been made in developing the Youth Activism Krik web platform, there are ongoing tasks and features yet to be implemented or refined.
 
 # Author Info
