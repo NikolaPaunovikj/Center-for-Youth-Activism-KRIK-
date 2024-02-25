@@ -22,7 +22,7 @@ Welcome to the Youth Activism Krik web platform! This project was developed with
 
 # How to use
 ### Installation
-1. Clone this repository: ```npm run dev ```
+1. Clone this repository
 2. Install dependencies : ```npm install```
 3. Start the local server ```npm run server```
 4. Start the development server ```npm run dev```
